@@ -1,0 +1,13 @@
+Il file Aeroporto.php offre due opzioni:
+-Registrazione: in questo caso l'utente dovrà inserire mail e password che vengono salvati nel file temporaneo Temp.csv. Successivamente il file Aeroporto eliminerà l'interfaccia di
+accesso o registrazione e offrirà nuove opzioni. Nell'item frame si aprirà la pagina del CompletamentoAccount.php dove viene fatto inserire il nominativo, data di nascita (min 18 anni) e
+sesso. In caso la mail è già stata registrata o contiene caratteri non consentiti verra fatta reinserire e allo stesso modo anche la password (Max 8 caratteri) nel caso contenga caratteri
+non consentiti. Nel caso l'utente prima di finire il completamento account clicchi sulle opzioni a sinistra verrà segnalato la mancata registrazione e sarà necessario riavviare la pagina.
+Invece se completa correttamente l'inserimento i dati verranno salvati in maniera temporanea in tempo.csv, verrà registrato in maniera permanente in RegistroUtenti.csv e un Counter
+permanente verrà creato o aumentato in un file. In seguito saranno disponibili le opzioni per visualizzare il proprio account, l'opzione per modificare delle caratteristiche dell'account
+rispettando i caratteri consentiti, l'opzione per prenotare un volo se presenti in sistema, o di elimarne uno se inserito. Quando viene inserita una prenotazione verrà tolto un posto
+all'aereo e in caso i posti diventano 0 verrà tolto dalle possibilità di scelta. In caso venga cancellato una prenotazione verrà aumentato di uno i posti liberi.
+-Accesso: in questo casa l'utente dovrà inserire mail e password per accedere. Nel caso in cui inserisca una mail sbagliata il programma proverà a controllare tra i SuperUtenti se la
+password corrisponde. In caso negativo verrà fatto reinseire la mail e password. Quindi per un utente normale come nella registrazione saranno permessi le normali opzioni (senza necessità
+di completamento account). Nel caso che l'utente sia entrato con un superAccount (il file SuperAccount.csv non verrà inserito dal sito ma solo manualmente creato e scritto per sicurezza)
+potrà inserire voli, visualizzare i voli inseriti se presenti, eliminare i voli presenti. In caso venga elimato un volo tutte le prenotazioni con quell'aereo verrano eliminate.
